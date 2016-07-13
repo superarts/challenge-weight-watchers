@@ -10,9 +10,10 @@
 		B81FCB9E1D36AD1F003CE14D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */; };
 		B81FCBA01D36AD1F003CE14D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCB9F1D36AD1F003CE14D /* ViewController.swift */; };
 		B81FCBA51D36AD1F003CE14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA41D36AD1F003CE14D /* Assets.xcassets */; };
-		B81FCBA81D36AD1F003CE14D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA61D36AD1F003CE14D /* LaunchScreen.storyboard */; };
 		B81FCBB31D36AD1F003CE14D /* WW_Exercise_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBB21D36AD1F003CE14D /* WW_Exercise_01Tests.swift */; };
 		B81FCBBE1D36AD1F003CE14D /* WW_Exercise_01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBBD1D36AD1F003CE14D /* WW_Exercise_01UITests.swift */; };
+		B81FCBCD1D36E016003CE14D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA61D36AD1F003CE14D /* LaunchScreen.storyboard */; };
+		F185F5495678FCA99DE40AD0 /* Pods_WW_Exercise_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1C7C08BD3930EA34D7ACB6 /* Pods_WW_Exercise_01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1C7C08BD3930EA34D7ACB6 /* Pods_WW_Exercise_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WW_Exercise_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCB9A1D36AD1F003CE14D /* WW-Exercise-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WW-Exercise-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81FCB9F1D36AD1F003CE14D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		B81FCBB91D36AD1F003CE14D /* WW-Exercise-01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WW-Exercise-01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCBBD1D36AD1F003CE14D /* WW_Exercise_01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WW_Exercise_01UITests.swift; sourceTree = "<group>"; };
 		B81FCBBF1D36AD1F003CE14D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2086772A102DB3B7EEB7DA6 /* Pods-WW-Exercise-01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WW-Exercise-01.release.xcconfig"; path = "Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01.release.xcconfig"; sourceTree = "<group>"; };
+		EA1D212533B23FB152E99DAA /* Pods-WW-Exercise-01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WW-Exercise-01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F185F5495678FCA99DE40AD0 /* Pods_WW_Exercise_01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49051172316E6A7F275DA276 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D212533B23FB152E99DAA /* Pods-WW-Exercise-01.debug.xcconfig */,
+				C2086772A102DB3B7EEB7DA6 /* Pods-WW-Exercise-01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B81FCB911D36AD1F003CE14D = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,8 @@
 				B81FCBB11D36AD1F003CE14D /* WW-Exercise-01Tests */,
 				B81FCBBC1D36AD1F003CE14D /* WW-Exercise-01UITests */,
 				B81FCB9B1D36AD1F003CE14D /* Products */,
+				49051172316E6A7F275DA276 /* Pods */,
+				D9F1E7B6766B17FECFD0DB06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +138,14 @@
 			path = "WW-Exercise-01UITests";
 			sourceTree = "<group>";
 		};
+		D9F1E7B6766B17FECFD0DB06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1C7C08BD3930EA34D7ACB6 /* Pods_WW_Exercise_01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81FCBC21D36AD1F003CE14D /* Build configuration list for PBXNativeTarget "WW-Exercise-01" */;
 			buildPhases = (
+				F3E378467C88EB560BDC7495 /* [CP] Check Pods Manifest.lock */,
 				B81FCB961D36AD1F003CE14D /* Sources */,
 				B81FCB971D36AD1F003CE14D /* Frameworks */,
 				B81FCB981D36AD1F003CE14D /* Resources */,
+				29CD32F82739BEF080824E7C /* [CP] Embed Pods Frameworks */,
+				79AC248CC8A73F6773A36E1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81FCBA81D36AD1F003CE14D /* LaunchScreen.storyboard in Resources */,
+				B81FCBCD1D36E016003CE14D /* LaunchScreen.storyboard in Resources */,
 				B81FCBA51D36AD1F003CE14D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +273,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29CD32F82739BEF080824E7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AC248CC8A73F6773A36E1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E378467C88EB560BDC7495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81FCB961D36AD1F003CE14D /* Sources */ = {
@@ -387,6 +462,7 @@
 		};
 		B81FCBC31D36AD1F003CE14D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1D212533B23FB152E99DAA /* Pods-WW-Exercise-01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WW-Exercise-01/Info.plist";
@@ -398,6 +474,7 @@
 		};
 		B81FCBC41D36AD1F003CE14D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2086772A102DB3B7EEB7DA6 /* Pods-WW-Exercise-01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WW-Exercise-01/Info.plist";

@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'WW-Exercise-01' do
+  pod 'AlamofireImage', '~> 2.4'
+  pod 'PureLayout', '~> 3.0'
+end
