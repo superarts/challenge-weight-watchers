@@ -15,7 +15,7 @@ If you succeed, you should see something like this:
 
 ![alt text](https://www.dropbox.com/s/7u1hdjk74orge82/exercise1_portrait.png?raw=1 "Exercise 1 Portrait")
 
- ** Bonus Points **
+**Bonus Points**
 
  * Display a placeholder image if the NSURL is invalid
  * Show an alert when the user taps the image
