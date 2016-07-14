@@ -13,7 +13,7 @@ To complete this exercise successfully, you need to do the following:
 
 If you succeed, you should see something like this:
 
-![alt text](https://www.dropbox.com/s/7u1hdjk74orge82/exercise1_portrait.png?raw=1 "Exercise 1 Portrait")
+![alt text](https://www.dropbox.com/s/8wxdmtqu7paua47/exercise1_portrait_sm.png?raw=1 "Exercise 1 Portrait")
 
 **Bonus Points**
 
