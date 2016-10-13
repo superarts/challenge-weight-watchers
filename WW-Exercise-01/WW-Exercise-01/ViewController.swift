@@ -15,19 +15,19 @@ class ViewController: UIViewController {
     var didSetupContrainsts = false
     var label = UILabel().configureForAutoLayout()
     var imageView = UIImageView().configureForAutoLayout()
+    var statusbar = UIView().configureForAutoLayout()
     
     // MARK:- View lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = UIColor.greenColor()
-        
         createSubviews()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -42,7 +42,6 @@ class ViewController: UIViewController {
     
     private func createSubviews() {
         
-        let statusbar = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 20))
         statusbar.backgroundColor = UIColor.darkGrayColor()
         view.addSubview(statusbar)
         
@@ -50,9 +49,17 @@ class ViewController: UIViewController {
         label.textAlignment = .Center
         view.addSubview(label)
         
-        let imageUrl = NSURL(string: "http://i.imgur.com/A8eQsll.jpg")
         imageView.contentMode = .ScaleAspectFit
-        imageView.af_setImageWithURL(imageUrl)
+        
+        let placeholderImage = UIImage(named:"placeholder")
+        if let imageUrl = NSURL(string: "http://i.imgur.com/A8eQsll.jpg") {
+            imageView.af_setImageWithURL(imageUrl, placeholderImage: placeholderImage, filter: nil, progress: nil, progressQueue: dispatch_get_main_queue(), imageTransition: .None, runImageTransitionIfCached: false, completion: nil)
+        }
+        
+        let  tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapAction(_:)))
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureRecognizer)
+        
         view.addSubview(imageView)
         
         view.setNeedsUpdateConstraints()
@@ -63,6 +70,11 @@ class ViewController: UIViewController {
     
     override func updateViewConstraints() {
         if !didSetupContrainsts {
+            
+            statusbar.autoSetDimension(ALDimension.Height, toSize: 20)
+            statusbar.autoPinEdgeToSuperviewEdge(.Leading)
+            statusbar.autoPinEdgeToSuperviewEdge(.Trailing)
+            statusbar.autoAlignAxisToSuperviewAxis(.Vertical)
             
             label.autoSetDimensionsToSize(CGSize(width: 100, height: 20))
             label.autoPinToTopLayoutGuideOfViewController(self, withInset: 50)
@@ -78,6 +90,14 @@ class ViewController: UIViewController {
         
         super.updateViewConstraints()
     }
-
+    
+    // Mark:- Gesture recognizer function
+    func imageTapAction(img: AnyObject)
+    {
+        let alert = UIAlertController(title: "Congrats", message: "You touched the image", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
 }
 
