@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var didSetupContrainsts = false
     var label = UILabel().configureForAutoLayout()
     var imageView = UIImageView().configureForAutoLayout()
-    
+
     // MARK:- View lifecycle
 
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.greenColor()
+        self.view.backgroundColor = UIColor.white
         
         createSubviews()
     }
@@ -34,25 +34,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK:- Private methods
     
-    private func createSubviews() {
+    func createSubviews() {
         
         let statusbar = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 20))
-        statusbar.backgroundColor = UIColor.darkGrayColor()
+        statusbar.backgroundColor = UIColor.darkGray
         view.addSubview(statusbar)
         
         label.text = "Exercise #1"
-        label.textAlignment = .Center
+        label.textAlignment = .center
         view.addSubview(label)
         
-        let imageUrl = NSURL(string: "http://i.imgur.com/A8eQsll.jpg")
-        imageView.contentMode = .ScaleAspectFit
-        imageView.af_setImageWithURL(imageUrl)
+        let imageUrl = URL(string: "http://i.imgur.com/A8eQsll.jpg")
+        imageView.contentMode = .scaleAspectFit
+        imageView.af_setImage(withURL: imageUrl)
         view.addSubview(imageView)
         
         view.setNeedsUpdateConstraints()
@@ -64,14 +64,14 @@ class ViewController: UIViewController {
     override func updateViewConstraints() {
         if !didSetupContrainsts {
             
-            label.autoSetDimensionsToSize(CGSize(width: 100, height: 20))
-            label.autoPinToTopLayoutGuideOfViewController(self, withInset: 50)
-            label.autoAlignAxisToSuperviewAxis(.Vertical)
+            label.autoSetDimensions(to: CGSize(width: 100, height: 20))
+            label.autoPin(toTopLayoutGuideOf: self, withInset: 50)
+            label.autoAlignAxis(toSuperviewAxis: .vertical)
             
-            imageView.autoPinEdge(.Top, toEdge: .Bottom, ofView: label, withOffset: 20)
-            imageView.autoPinToTopLayoutGuideOfViewController(self, withInset: 70)
-            imageView.autoSetDimension(.Height, toSize: 200)
-            imageView.autoAlignAxisToSuperviewAxis(.Vertical)
+            imageView.autoPinEdge(.top, to: .bottom, of: label, withOffset: 20)
+            imageView.autoPin(toTopLayoutGuideOf: self, withInset: 70)
+            imageView.autoSetDimension(.height, toSize: 200)
+            imageView.autoAlignAxis(toSuperviewAxis: .vertical)
             
             didSetupContrainsts = true
         }
