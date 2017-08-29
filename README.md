@@ -22,4 +22,8 @@ If you succeed, you should see something like this:
 
 ## Exercise 2
 
-To come
+Building on Exercise 1, consume the following endpoint and deserialize the JSON response:
+
+https://cmx.weightwatchers.com/api/v3/public/albums/discover_recipes
+
+With the data from this endpoint, update Exercise 1 to display the title and image of each object in the response. You can use any UIView or UIControl to do this.
