@@ -159,6 +159,7 @@
 				B81FCB981D36AD1F003CE14D /* Resources */,
 				29CD32F82739BEF080824E7C /* [CP] Embed Pods Frameworks */,
 				79AC248CC8A73F6773A36E1D /* [CP] Copy Pods Resources */,
+				B8191F4C20052A0200DCF298 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -314,6 +315,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B8191F4C20052A0200DCF298 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		F3E378467C88EB560BDC7495 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
