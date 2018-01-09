@@ -34,17 +34,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
-    }
-    
     // MARK:- Private methods
     
     func createSubviews() {
-        
-        let statusbar = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 20))
-        statusbar.backgroundColor = UIColor.darkGray
-        view.addSubview(statusbar)
         
         label.text = "Exercise #1"
         label.textAlignment = .center
