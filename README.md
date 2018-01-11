@@ -16,7 +16,7 @@ To complete this exercise successfully, you need to do the following:
 **Bonus Points**
 
  * Replace PureLayout with a solution that supports Safe Area Layout Guide for iPhone X
- * Display a placeholder image if the NSURL is invalid
+ * Display a placeholder image if the URL is invalid
  * Display an alert when the image is tapped
 
 ## Exercise 2
