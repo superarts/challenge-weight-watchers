@@ -4,7 +4,7 @@
 # the repo. Unless a later match takes precedence,
 # @prnewman, @Ian-L, and @g-mark will be requested for
 # review when someone opens a pull request.
-*       @prnewman @Ian-L @g-mark
+*       @prnewman @Ian-L @g-mark yuichi-kuroda-ww
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
