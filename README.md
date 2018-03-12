@@ -21,7 +21,12 @@ To complete this exercise successfully, you need to do the following:
 
 ## Exercise 2
 
-TBD
+To complete this exercise, open Exercise2.playground in Xcode and do the following:
+
+* Fix compilation errors.
+* Assign the teacher the name "Alice" and an age of 31.
+* Implement `addStudents()` to add Cecilia, Ellen, and Bob to Alice's list of students.
+* In `printStudents()`, print the student's age if it's available. Otherwise, just print the name.
 
 ## Exercise 3
 
