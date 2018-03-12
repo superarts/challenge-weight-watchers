@@ -21,7 +21,15 @@ To complete this exercise successfully, you need to do the following:
 
 ## Exercise 2
 
-TBD
+To complete this exercise, you need to do the following:
+
+* Clone the [ios-exercises](https://github.com/WW-Digital/ios-exercises) repo, if you haven't already.
+* Open Exercise2.playground in Xcode.
+* Fix compilation errors.
+* Assign the teacher the name "Alice" and an age of 31.
+* Implement `addStudents()` to add Cecilia, Ellen, and Bob to Alice's list of students.
+* In `printStudents()`, print the student's age if it's available. Otherwise, just print the name.
+* Submit your completed updates to the ios-exercises repo using a pull request.
 
 ## Exercise 3
 
