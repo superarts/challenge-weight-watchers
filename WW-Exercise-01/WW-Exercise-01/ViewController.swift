@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var label = UILabel().configureForAutoLayout()
     var imageView = UIImageView().configureForAutoLayout()
 
-    // MARK:- View lifecycle
+    // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,15 +34,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK:- Private methods
+    // MARK: - Private methods
     
-    func createSubviews() {
+    private func createSubviews() {
         
-        label.text = "Exercise #1"
+        label.text = "Summer Grilling"
         label.textAlignment = .center
         view.addSubview(label)
         
-        let imageUrl = URL(string: "http://i.imgur.com/A8eQsll.jpg")
+        let imageUrl = URL(string: "http://www.weightwatchers.com/images/1033/dynamic/foodandrecipes/2015/07/TANDORI_GRILLED_SHRIMP_1053_800x800.jpg")
         imageView.contentMode = .scaleAspectFit
         imageView.af_setImage(withURL: imageUrl)
         view.addSubview(imageView)
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         view.updateConstraintsIfNeeded()
     }
     
-    // MARK:- Auto layout
+    // MARK: - Auto layout
     
     override func updateViewConstraints() {
         if !didSetupContrainsts {
@@ -72,4 +72,3 @@ class ViewController: UIViewController {
     }
 
 }
-

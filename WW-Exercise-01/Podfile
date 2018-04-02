@@ -6,4 +6,5 @@ target 'WW-Exercise-01' do
   platform :ios, '9.0'
   pod 'AlamofireImage', '~> 3.2'
   pod 'PureLayout', '~> 3.0'
+  pod 'SwiftLint'
 end
