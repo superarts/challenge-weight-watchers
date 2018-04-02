@@ -13,19 +13,17 @@ jobs:
     steps:
       - checkout
       - run: pwd
-      - run: cd WW-Exercise-01
-      - run: pwd
       - run:
           name: Fetch CocoaPods Specs
           command: |
             curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
       - run:
           name: Install CocoaPods
-          command: pod install --verbose
+          command: cd WW-Exercise-01 && pod install --verbose
 
       - run:
           name: Build and run tests
-          command: fastlane scan
+          command: cd WW-Exercise-01 && fastlane scan
           environment:
             SCAN_DEVICE: iPhone 8
             SCAN_SCHEME: WebTests
