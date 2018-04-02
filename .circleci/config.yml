@@ -26,7 +26,7 @@ jobs:
           command: cd WW-Exercise-01 && fastlane scan
           environment:
             SCAN_DEVICE: iPhone 8
-            SCAN_SCHEME: WebTests
+            SCAN_SCHEME: WW-Exercise-01
 
       - store_test_results:
           path: output/scan
