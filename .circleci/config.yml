@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - checkout
+      - cd WW-Exercise-01
       - run:
           name: Fetch CocoaPods Specs
           command: |
