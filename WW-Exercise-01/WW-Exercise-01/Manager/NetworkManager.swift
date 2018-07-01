@@ -21,11 +21,14 @@ enum CuisineTarget {
 	case getCuisines
 }
 
+// swiftlint:disable force_unwrapping
+// Hard-coded force_unwrapping will never fail
+
 extension CuisineTarget: TargetType {
 	var baseURL: URL { return URL(string: "https://www.weightwatchers.com/assets/")! }
 	var path: String {
 		switch self {
-			case .getCuisines: return "cmx/us/messages/collections.json"
+		case .getCuisines: return "cmx/us/messages/collections.json"
 		}
 	}
 	var method: Moya.Method {

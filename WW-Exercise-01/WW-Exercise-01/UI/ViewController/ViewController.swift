@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 	
 	private func setupViewModel() {
 		viewModel.cuisines.producer.startWithValues { cuisines in
-			guard cuisines.count > 0 else {
+			guard !cuisines.isEmpty else {
 				return
 			}
 			DispatchQueue.main.async {

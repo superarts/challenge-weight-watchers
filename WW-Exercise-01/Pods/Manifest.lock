@@ -26,12 +26,14 @@ PODS:
   - ReactiveSwift (2.0.1):
     - Result (~> 3.2)
   - Result (3.2.4)
+  - SwiftLint (0.26.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - Dip
   - EVReflection/MoyaReactiveSwift
   - ReactiveCocoa
+  - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -42,7 +44,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 9dcbd8275374f35a6e5fcce01a93b860a7b92c44
   ReactiveSwift: 60a29ff35988a964fd2bb759755cb6594de523fc
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: 5af94e6f3d47e7386921930412c410a256c2bf3f
+PODFILE CHECKSUM: d6a1823cb1ef328172c9b2663fffea45f445601a
 
 COCOAPODS: 1.2.1

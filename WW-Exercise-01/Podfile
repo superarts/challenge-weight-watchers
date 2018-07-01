@@ -5,7 +5,7 @@ use_frameworks!
 def dependencies_shared
   platform :ios, '9.0'
   pod 'AlamofireImage'
-# pod 'SwiftLint'
+  pod 'SwiftLint'
   pod 'EVReflection/MoyaReactiveSwift'
   pod 'ReactiveCocoa'
   pod 'Dip'

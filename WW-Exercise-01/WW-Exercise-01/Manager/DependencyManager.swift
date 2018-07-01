@@ -17,6 +17,12 @@ extension RequiresDependency {
  * A dependency manager powered by Dip
  * TODO: create interface
  */
+
+// swiftlint:disable force_try
+// Dependency checking is performed in WWDependencyTests.
+// It doesn't make sense to catch exceptions here,
+// as broken dependencies will definitely crash the app and should always be fixed before merging to master/develop branch.
+
 class DependencyManager {
 	public static var shared = DependencyManager()
 	

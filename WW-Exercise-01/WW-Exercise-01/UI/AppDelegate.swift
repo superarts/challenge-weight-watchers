@@ -19,10 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RequiresNavigation {
 			window = UIWindow(frame: UIScreen.main.bounds)
 		}
 		
-		navigationManager.setup(window: window!)
-		navigationManager.setViewControllerAsRoot()
-		window?.rootViewController = navigationManager.rootViewController
-		window?.makeKeyAndVisible()
+		if let window = window {
+    		navigationManager.setup(window: window)
+    		navigationManager.setViewControllerAsRoot()
+    		window.rootViewController = navigationManager.rootViewController
+    		window.makeKeyAndVisible()
+		}
 		
 		return true
 	}
