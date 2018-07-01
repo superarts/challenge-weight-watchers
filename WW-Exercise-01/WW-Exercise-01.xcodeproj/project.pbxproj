@@ -20,7 +20,7 @@
 		B3BE8D3620E8483800182BB4 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2620E8483800182BB4 /* DependencyManager.swift */; };
 		B3BE8D3720E8483800182BB4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2720E8483800182BB4 /* NetworkManager.swift */; };
 		B3BE8D3820E8483800182BB4 /* CuisineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2820E8483800182BB4 /* CuisineManager.swift */; };
-		B3BE8D3920E8483800182BB4 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2A20E8483800182BB4 /* SchoolModel.swift */; };
+		B3BE8D3920E8483800182BB4 /* CuisineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */; };
 		B81FCBA51D36AD1F003CE14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA41D36AD1F003CE14D /* Assets.xcassets */; };
 		B81FCBB31D36AD1F003CE14D /* WW_Exercise_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBB21D36AD1F003CE14D /* WW_Exercise_01Tests.swift */; };
 		B81FCBBE1D36AD1F003CE14D /* WW_Exercise_01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBBD1D36AD1F003CE14D /* WW_Exercise_01UITests.swift */; };
@@ -63,7 +63,7 @@
 		B3BE8D2620E8483800182BB4 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B3BE8D2720E8483800182BB4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B3BE8D2820E8483800182BB4 /* CuisineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineManager.swift; sourceTree = "<group>"; };
-		B3BE8D2A20E8483800182BB4 /* SchoolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineModel.swift; sourceTree = "<group>"; };
 		B81FCB9A1D36AD1F003CE14D /* WW-Exercise-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WW-Exercise-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCBA41D36AD1F003CE14D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81FCBA71D36AD1F003CE14D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		B3BE8D2920E8483800182BB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B3BE8D2A20E8483800182BB4 /* SchoolModel.swift */,
+				B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -561,7 +561,7 @@
 				B3BE8D2D20E8483800182BB4 /* TableManager.swift in Sources */,
 				B3BE8D3620E8483800182BB4 /* DependencyManager.swift in Sources */,
 				B3BE8D3120E8483800182BB4 /* ViewController.swift in Sources */,
-				B3BE8D3920E8483800182BB4 /* SchoolModel.swift in Sources */,
+				B3BE8D3920E8483800182BB4 /* CuisineModel.swift in Sources */,
 				B3BE8D3320E8483800182BB4 /* CellViewModel.swift in Sources */,
 				B3BE8D3720E8483800182BB4 /* NetworkManager.swift in Sources */,
 				B3BE8D2E20E8483800182BB4 /* NavigationManager.swift in Sources */,

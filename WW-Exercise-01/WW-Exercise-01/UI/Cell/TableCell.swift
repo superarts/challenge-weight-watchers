@@ -10,7 +10,6 @@ class CuisineTableCell: UITableViewCell {
 	public var viewModel: CuisineCellViewModel! {
 		// Bind UI elements with ViewModel once it's set
 		didSet {
-			//titleLabel.reactive.text <~ viewModel.title
 			if let textLabel = textLabel {
     			textLabel.reactive.text <~ viewModel.title
 			}
