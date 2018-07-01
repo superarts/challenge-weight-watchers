@@ -2,9 +2,33 @@ source 'https://github.com/CocoaPods/Specs.git'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'WW-Exercise-01' do
+def dependencies_shared
   platform :ios, '9.0'
-  pod 'AlamofireImage', '~> 3.2'
-  pod 'PureLayout', '~> 3.0'
-  pod 'SwiftLint'
+  pod 'AlamofireImage'
+# pod 'SwiftLint'
+  pod 'EVReflection/MoyaReactiveSwift'
+  pod 'ReactiveCocoa'
+  pod 'Dip'
+end
+
+target 'WW-Exercise-01' do
+  dependencies_shared
+end
+
+target 'WW-Exercise-01Tests' do
+  dependencies_shared
+end
+
+target 'WW-Exercise-01UITests' do
+  dependencies_shared
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['ReactiveCocoa'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '3.2'
+      end
+    end
+  end
 end
