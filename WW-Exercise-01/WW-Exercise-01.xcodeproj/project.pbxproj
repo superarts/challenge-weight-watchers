@@ -10,17 +10,19 @@
 		4B078A7133944F164A231A67 /* Pods_WW_Exercise_01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE370BF2F411C63D2C71BCB /* Pods_WW_Exercise_01Tests.framework */; };
 		4EBA98E66210026E83D59852 /* Pods_WW_Exercise_01UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D424DC244A57D2815414934 /* Pods_WW_Exercise_01UITests.framework */; };
 		B3BE8D2B20E8483800182BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1620E8483700182BB4 /* AppDelegate.swift */; };
-		B3BE8D2C20E8483800182BB4 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1820E8483700182BB4 /* TableCell.swift */; };
-		B3BE8D2D20E8483800182BB4 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1A20E8483700182BB4 /* TableManager.swift */; };
+		B3BE8D2C20E8483800182BB4 /* CuisineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1820E8483700182BB4 /* CuisineTableCell.swift */; };
+		B3BE8D2D20E8483800182BB4 /* CuisineTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1A20E8483700182BB4 /* CuisineTableManager.swift */; };
 		B3BE8D2E20E8483800182BB4 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1B20E8483700182BB4 /* NavigationManager.swift */; };
 		B3BE8D3120E8483800182BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D1F20E8483700182BB4 /* ViewController.swift */; };
 		B3BE8D3220E8483800182BB4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2120E8483700182BB4 /* ViewModel.swift */; };
-		B3BE8D3320E8483800182BB4 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2220E8483700182BB4 /* CellViewModel.swift */; };
+		B3BE8D3320E8483800182BB4 /* CuisineCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2220E8483700182BB4 /* CuisineCellViewModel.swift */; };
 		B3BE8D3520E8483800182BB4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2420E8483700182BB4 /* Common.swift */; };
 		B3BE8D3620E8483800182BB4 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2620E8483800182BB4 /* DependencyManager.swift */; };
 		B3BE8D3720E8483800182BB4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2720E8483800182BB4 /* NetworkManager.swift */; };
 		B3BE8D3820E8483800182BB4 /* CuisineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2820E8483800182BB4 /* CuisineManager.swift */; };
 		B3BE8D3920E8483800182BB4 /* CuisineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */; };
+		B3BE8D3B20ED160D00182BB4 /* ReflectionNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D3A20ED160D00182BB4 /* ReflectionNetworkManager.swift */; };
+		B3BE8D3D20ED164600182BB4 /* MoyaNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D3C20ED164600182BB4 /* MoyaNetworkManager.swift */; };
 		B81FCBA51D36AD1F003CE14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA41D36AD1F003CE14D /* Assets.xcassets */; };
 		B81FCBB31D36AD1F003CE14D /* WW_Exercise_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBB21D36AD1F003CE14D /* WW_Exercise_01Tests.swift */; };
 		B81FCBBE1D36AD1F003CE14D /* WW_Exercise_01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCBBD1D36AD1F003CE14D /* WW_Exercise_01UITests.swift */; };
@@ -53,17 +55,19 @@
 		66C063EA7FBC521574AB5E79 /* Pods-WW-Exercise-01UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WW-Exercise-01UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WW-Exercise-01UITests/Pods-WW-Exercise-01UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A196E9EEB56952266FAB04B1 /* Pods-WW-Exercise-01UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WW-Exercise-01UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WW-Exercise-01UITests/Pods-WW-Exercise-01UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3BE8D1620E8483700182BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3BE8D1820E8483700182BB4 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
-		B3BE8D1A20E8483700182BB4 /* TableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		B3BE8D1820E8483700182BB4 /* CuisineTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineTableCell.swift; sourceTree = "<group>"; };
+		B3BE8D1A20E8483700182BB4 /* CuisineTableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineTableManager.swift; sourceTree = "<group>"; };
 		B3BE8D1B20E8483700182BB4 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		B3BE8D1F20E8483700182BB4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3BE8D2120E8483700182BB4 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		B3BE8D2220E8483700182BB4 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		B3BE8D2220E8483700182BB4 /* CuisineCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineCellViewModel.swift; sourceTree = "<group>"; };
 		B3BE8D2420E8483700182BB4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B3BE8D2620E8483800182BB4 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B3BE8D2720E8483800182BB4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B3BE8D2820E8483800182BB4 /* CuisineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineManager.swift; sourceTree = "<group>"; };
 		B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineModel.swift; sourceTree = "<group>"; };
+		B3BE8D3A20ED160D00182BB4 /* ReflectionNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionNetworkManager.swift; sourceTree = "<group>"; };
+		B3BE8D3C20ED164600182BB4 /* MoyaNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetworkManager.swift; sourceTree = "<group>"; };
 		B81FCB9A1D36AD1F003CE14D /* WW-Exercise-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WW-Exercise-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCBA41D36AD1F003CE14D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81FCBA71D36AD1F003CE14D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +138,7 @@
 		B3BE8D1720E8483700182BB4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B3BE8D1820E8483700182BB4 /* TableCell.swift */,
+				B3BE8D1820E8483700182BB4 /* CuisineTableCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -142,7 +146,7 @@
 		B3BE8D1920E8483700182BB4 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B3BE8D1A20E8483700182BB4 /* TableManager.swift */,
+				B3BE8D1A20E8483700182BB4 /* CuisineTableManager.swift */,
 				B3BE8D1B20E8483700182BB4 /* NavigationManager.swift */,
 			);
 			path = Manager;
@@ -160,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B3BE8D2120E8483700182BB4 /* ViewModel.swift */,
-				B3BE8D2220E8483700182BB4 /* CellViewModel.swift */,
+				B3BE8D2220E8483700182BB4 /* CuisineCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,8 +172,8 @@
 		B3BE8D2520E8483800182BB4 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B3BE8D3E20ED166500182BB4 /* NetworkManager */,
 				B3BE8D2620E8483800182BB4 /* DependencyManager.swift */,
-				B3BE8D2720E8483800182BB4 /* NetworkManager.swift */,
 				B3BE8D2820E8483800182BB4 /* CuisineManager.swift */,
 			);
 			path = Manager;
@@ -181,6 +185,16 @@
 				B3BE8D2A20E8483800182BB4 /* CuisineModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B3BE8D3E20ED166500182BB4 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE8D2720E8483800182BB4 /* NetworkManager.swift */,
+				B3BE8D3A20ED160D00182BB4 /* ReflectionNetworkManager.swift */,
+				B3BE8D3C20ED164600182BB4 /* MoyaNetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		B81FCB911D36AD1F003CE14D = {
@@ -556,13 +570,15 @@
 				B3BE8D3820E8483800182BB4 /* CuisineManager.swift in Sources */,
 				B3BE8D3220E8483800182BB4 /* ViewModel.swift in Sources */,
 				B3BE8D3520E8483800182BB4 /* Common.swift in Sources */,
-				B3BE8D2C20E8483800182BB4 /* TableCell.swift in Sources */,
+				B3BE8D2C20E8483800182BB4 /* CuisineTableCell.swift in Sources */,
 				B3BE8D2B20E8483800182BB4 /* AppDelegate.swift in Sources */,
-				B3BE8D2D20E8483800182BB4 /* TableManager.swift in Sources */,
+				B3BE8D2D20E8483800182BB4 /* CuisineTableManager.swift in Sources */,
 				B3BE8D3620E8483800182BB4 /* DependencyManager.swift in Sources */,
+				B3BE8D3B20ED160D00182BB4 /* ReflectionNetworkManager.swift in Sources */,
 				B3BE8D3120E8483800182BB4 /* ViewController.swift in Sources */,
 				B3BE8D3920E8483800182BB4 /* CuisineModel.swift in Sources */,
-				B3BE8D3320E8483800182BB4 /* CellViewModel.swift in Sources */,
+				B3BE8D3D20ED164600182BB4 /* MoyaNetworkManager.swift in Sources */,
+				B3BE8D3320E8483800182BB4 /* CuisineCellViewModel.swift in Sources */,
 				B3BE8D3720E8483800182BB4 /* NetworkManager.swift in Sources */,
 				B3BE8D2E20E8483800182BB4 /* NavigationManager.swift in Sources */,
 			);

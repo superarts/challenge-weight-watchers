@@ -15,7 +15,6 @@ extension RequiresDependency {
 
 /**
  * A dependency manager powered by Dip
- * TODO: create interface
  */
 
 // swiftlint:disable force_try

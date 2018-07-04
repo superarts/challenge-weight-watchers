@@ -28,7 +28,6 @@ class NetworkViewModel: ViewModel, RequiresCuisineData {
 		}
 	}
 	func reload() {
-		// TODO: add checking to prevent unnecessary repeated reloading
 		cuisineManager.request()
 	}
 }

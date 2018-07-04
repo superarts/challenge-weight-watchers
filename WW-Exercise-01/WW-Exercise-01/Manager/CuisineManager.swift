@@ -15,7 +15,6 @@ extension RequiresCuisineData {
 
 /**
 * Handling cuisines data
-* TODO: add interface
 */
 class CuisineManager: RequiresNetworking {
 	

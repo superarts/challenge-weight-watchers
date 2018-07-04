@@ -46,7 +46,7 @@ class WWNetworkTests: XCTestCase, RequiresNetworking {
 	// TODO: properly ignore initial value of MutableProperties
 	private let cuisinesExpectation = XCTestExpectation(description: "ww.test.networking.cuisines")
 	private var isInitialCuisinesCall = true
-	func testSchools() {
+	func testCuisines() {
 		networkManager.cuisines.producer.startWithValues { cuisines in
 			if self.isInitialCuisinesCall {
 				self.isInitialCuisinesCall = false
@@ -60,7 +60,7 @@ class WWNetworkTests: XCTestCase, RequiresNetworking {
 		wait(for: [cuisinesExpectation], timeout: 20.0)
 	}
 
-	private let errorExpectation = XCTestExpectation(description: "nycschools.test.networking.error")
+	private let errorExpectation = XCTestExpectation(description: "ww.test.networking.error")
 	private var errorTestCount = 0
 	func testError() {
 		networkManager.error.producer.startWithValues { error in

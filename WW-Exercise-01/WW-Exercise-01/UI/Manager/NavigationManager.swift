@@ -1,11 +1,3 @@
-//
-//  Wireframe.swift
-//  20180125-LL-NYCSchools
-//
-//  Created by Leo on 1/26/18.
-//  Copyright © 2018 Super Art Software. All rights reserved.
-//
-
 import UIKit
 
 /**
@@ -21,7 +13,6 @@ extension RequiresNavigation {
 	}
 }
 
-// TODO: create interface
 class NavigationManager: RequiresDependency {
 	public static let shared = NavigationManager()
 	

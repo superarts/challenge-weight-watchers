@@ -15,7 +15,6 @@ class StandardCuisineCellViewModel: CuisineCellViewModel {
 		//	Update MutableProperties when `cuisine` is set
 		didSet {
 			title.value = cuisine.title ?? ""
-			//	TODO: based on different business requirements, the hard-coded URL below should be moved to CuisineModel or NetworkManager.
 			imageURLString.value = "https://www.weightwatchers.com/" + (cuisine.image ?? "")
 		}
 	}

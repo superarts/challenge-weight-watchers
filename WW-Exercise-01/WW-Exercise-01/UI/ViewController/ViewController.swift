@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     private var label = UILabel()
     private var imageView = UIImageView()
 	private var cuisineTableView = UITableView()
+	private var isConstraintsSet = false
 
     // MARK: - View lifecycle
 
@@ -44,7 +45,6 @@ class ViewController: UIViewController {
 			let cuisine = self.viewModel.cuisines.value[index]
 			print(cuisine)
 			
-			//	TODO: need clarification of "Display an alert when the image is tapped"
 			let alert = UIAlertController(title: "Cuisine Selected", message: cuisine.title, preferredStyle: UIAlertControllerStyle.alert)
 			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 			self.present(alert, animated: true, completion: nil)
@@ -88,12 +88,15 @@ class ViewController: UIViewController {
     // MARK: - Auto layout
     
     override func updateViewConstraints() {
-		
-		cuisineTableView.translatesAutoresizingMaskIntoConstraints = false
-		cuisineTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-		cuisineTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-		cuisineTableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-		cuisineTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+	
+		if !isConstraintsSet {
+			isConstraintsSet = true
+    		cuisineTableView.translatesAutoresizingMaskIntoConstraints = false
+    		cuisineTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+    		cuisineTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    		cuisineTableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    		cuisineTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+		}
 		
         super.updateViewConstraints()
     }

@@ -20,18 +20,4 @@ class CuisineTableCell: UITableViewCell {
 			}
 		}
 	}
-	
-	override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-		super.init(style: style, reuseIdentifier: reuseIdentifier)
-		//	Add subviews and update constraints here
-	}
-	
-	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
-	
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		//	Other dynamic UI update here
-	}
 }
